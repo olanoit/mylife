@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Día de los Enamorados para Lesly y Cristóbal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .card {
+        border: none;
+    }
+    .card-img-top {
+        border-radius: 50%;
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .card-title {
+        color: #FF1493;
+    }
+    .card-text {
+        color: #696969;
+    }
+    #send-wishes {
+        background-color: #FF1493;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    send-body {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <img src="img1.jpg" class="card-img-top" alt="Imagen Romántica">
+        <div class="card-body">
+            <h1 class="card-title">¡Feliz Día de los Enamorados!</h1>
+            <p class="card-text">Lesly y Cristóbal</p>
+            <p class="card-text">Que este día esté lleno de amor y momentos especiales juntos. ¡Feliz Día de San Valentín Amor mío!</p>
+            <button id="send-wishes">Te Amo</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+
+    $(document).ready(function(){
+        $("#send-wishes").click(function(){
+            Swal.fire({
+                title: "Te amo Lesly!",
+                html: "Lesly, contigo cada día es un regalo lleno de amor.</b>" +
+                "Eres, mi luz en la oscuridad y mi amor eterno.</b>" +
+                "Eres el latido de mi corazón y la sonrisa en mi rostro.</b>" +
+                "El amor de mi vida, cada momento contigo es un tesoro.</b>" +
+                "Tú haces que cada día sea especial con tu amor incondicional.</b>" +
+                "Con tigo a mi lado, cada día es una aventura llena de amor y felicidad.</b>" +
+                "Gracias por llenar mi vida de amor, risas y momentos inolvidables.</b>" +
+                "Mi amor, mi compañera, mi todo. Te amo más de lo que las palabras pueden expresar.</b>" +
+                "Eres mi inspiración, mi apoyo y mi mayor alegría. ¡Feliz Día de San Valentín!</b>" +
+                "Mi amor eterno, mi razón de ser. Gracias por hacer mi vida completa. </b>" +
+                "con Amor Cristóbal! 💖",
+                imageUrl: "https://cdn.pixabay.com/photo/2024/02/01/10/55/heart-8545742_1280.jpg",
+                imageWidth: 400,
+                imageHeight: 500,
+                imageAlt: "Custom image",
+                confirmButtonText: "∞",
+              });
+        });        
+    });
+</script>
+
+</body>
+</html>
